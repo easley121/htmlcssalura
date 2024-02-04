@@ -1,0 +1,253 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: #BBBBBB;
+    padding: 20px 0;
+}
+.banner{
+    width: 100%;   
+}
+.principal{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+.principal h2{
+    text-align: center;
+    font-size: 2em;
+    margin: 10px 0 1em;
+}
+.utencilios{
+    width: 130px;
+    float: left;
+    border-radius: 10px;
+    margin: 0 5px 5px 0;
+}
+.principal p{
+    margin: 0 0 1em;
+    text-align: justify;
+    font-size: 18px;
+}
+.mision{
+    text-align: center;
+}
+.principal strong{
+    font-weight: bold;
+}
+.principal em{
+    font-style: italic;
+}
+.mapa{
+    width: 70%;
+    text-align: center;
+    font-weight: bolder;
+    margin: 20px auto 20px auto;
+}
+.mapa h3{
+    font-size: 2em;
+    margin: 10px 0 1em;
+}
+.mapa p{
+    margin: 10px 0 1em;
+    font-weight: bold;
+}
+.mapa iframe{
+width: 100%;
+height: 350px;
+border-radius: 15px;
+}
+.diferenciales h3{
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+}
+.diferenciales{
+    width: 70%;
+    margin: 20px auto;
+}
+.listaDiferenciales{
+    width: 30%;
+    position: absolute;
+}
+.listaDiferenciales ul{
+    list-style: inside;
+    font-weight: bold;
+}
+.listaDiferenciales li{
+    line-height: 1.5;
+}
+.media{
+    width: 70%;
+    position: relative;
+    margin: 0 0 0 auto;
+}
+.imgDiferenciales{
+    width: 100%;
+    border-radius: 15px;
+}
+.diferenciales iframe{
+    width: 100%;
+    height: 350px;
+    border-radius: 15px;
+}
+
+
+.caja{
+    position: relative;
+    width: 70%;
+    margin: 0 auto;
+}
+nav{
+    position: absolute;
+    top: 110px;
+    right: 0%;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+nav a{
+    text-transform: uppercase;
+    color: black;
+    font-weight: bolder;
+    font-size: 22px;
+    text-decoration: none;
+    
+}
+nav a:hover{
+    color: bisque;
+    text-decoration: underline;
+}
+.productos{
+    width: 70%;
+    margin:0 auto;
+    padding: 50px;
+}
+.productos li{
+display: inline-block;
+text-align: center;
+width: 30%;
+vertical-align: top;
+margin: 0 1.5%;
+padding: 30px 20px;
+box-sizing: border-box;
+border: 2px solid black;
+border-radius: 10px;
+}
+.productos li:hover {
+    border: 4px solid bisque;
+}
+.productos li:hover h2 {
+    font-size: 33px;
+}
+.productosli :active{
+    border-color: aquamarine;
+}
+.productos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.prodDescripcion{
+font-size: 18px;
+}
+.prodPrecio{
+font-size: 20px;
+font-weight: bold;
+margin-top: 10px;
+}
+.horarios{
+    width: 100%;
+    padding: 10px;
+    background-color: #BBBBBB;
+}
+ .horarios table{
+    margin: auto;
+    padding: 5px;
+ }
+ .horarios thead{
+    color: azure;
+    font-weight: bold;
+    padding: 10px;
+ }
+ .horarios td{
+    border-bottom: 1px solid;
+    color: azure;
+    padding: 10px;
+ }
+.formulario{
+    width: 70%;
+    margin: auto;
+}
+.formulario form{
+    margin:  20px auto;
+}
+.formulario form label{
+    display: block;
+    font-size: 20px;
+    margin: 10px 0 10px;
+}
+.formulario form input, textarea{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px;
+    width: 50%;
+}
+.modosContacto{
+    width: 70%;
+    margin: auto;
+}
+.modosContacto form{
+    margin: 40px 0;
+}
+.modosContacto form label, legend{
+    display: block;
+    font-size: 20px;
+    margin: 15px 0 15px;
+}
+.modosContacto input{
+    display: inline-block;
+    font-size: 20px;
+    margin: 10px 5px 10px;
+    
+}
+.boton{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.boton:hover{
+    background: darkorange;
+    transform: scale(1.2);
+}
+.pie{
+    padding: 30px;
+    text-align: center;
+    background: url(img/bg.jpg)
+}
+.pie h3{
+color: white;
+margin: 20px;
+}
+
+@media screen and (max-width:480px){
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .caja, .principal, .mapa, .media {
+        width: auto;
+    }
+    .lista-Diferenciales, .imagen-diferenciales{
+        width: 100%;
+    }
+}

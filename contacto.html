@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+  <head>
+    <title>Contacto - Barberia Alura</title>
+    <link rel="stylesheet" href="reset.css">
+    <link  rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <header>
+        <div class="caja">
+            <h1><img src="img/logo.png" alt="Logo"></h1>
+        <nav>
+            <ul>
+                <li> <a  href="index.html">HOME</a></li>
+                <li> <a  href="productos.html">Productos</a></li>
+                <li> <a  href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="horarios">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dia</th>
+                        <th>Horario</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Lunes</td>
+                        <td>08 hrs - 20 hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Miercoles</td>
+                        <td>08 hrs - 20 hrs</td>
+                    </tr>
+                    <tr>
+                        <td>Viernes</td>
+                        <td>08 hrs - 20 hrs</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br>
+        <fieldset class="formulario">
+            <form>
+                <label for="nombre">Nombre y Aprellido</label>
+                    <input type="text" id="nombre" required >
+                <label for="correo">Correo Elecronico</label>
+                    <input type="email" id="correo" required placeholder="email@dominio.com">
+                <label for="telefono">Telefono</label>
+                    <input type="tel" id="telefono" required placeholder="(xxx) xxx xx xx">
+                <label for="mensaje"></label>
+                    <textarea cols="70" rows="10" id="mensaje"></textarea>
+            </form>
+        </fieldset>
+        <fieldset class="modosContacto">
+            <form>
+                <legend>Como le gustaria ser contactado?</legend>
+                    <label for="radioemail"><input type="radio" name="contacto" value="email" id="radioemail">Email</label>
+                    
+                    <label for="radioemensaje"><input type="radio" name="contacto" value="mensaje" id="radioemensaje" checked>Mensaje</label>
+                    
+                    <label for="radiollamada"><input type="radio" name="contacto" value="llamada" id="radiollamada">Llamada</label>
+                <legend>A que hora quiere ser atendido?</legend>
+                    <select required>
+                        <option>Mañana</option>
+                        <option>Tarde</option>
+                        <option>Noche</option>
+                    </select>
+                    <label><input type="checkbox" checked>Le gustaria ser contactado?</label> 
+                <input type="submit" value="Enviar Formulario" class="boton"> 
+            </form>
+        </fieldset> 
+        <br>
+        
+    </main>
+
+    <footer class="pie">
+        <img src="img/logo-blanco.png" alt="Logo">
+        <h3>&copy;Derechos Reservados 2024</h3>
+    </footer>
+
+  </body>
+</html>
